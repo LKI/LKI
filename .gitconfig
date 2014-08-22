@@ -1,0 +1,23 @@
+[user]
+	name = Lirian Su
+	email = l@cloudisdream.com
+[alias]
+	logg = log --graph --decorate --oneline --abbrev-commit --all
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[help]
+	autocorrect = 1
+[core]
+	editor = vim
+	autocrlf = true
+	excludesfile = C:\\Users\\l9s\\Documents\\gitignore_global.txt
+[color]
+	ui = true
+[merge]
+	tool = vimdiff
+[push]
+	default = simple
+[credential]
+	helper = store
