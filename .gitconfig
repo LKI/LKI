@@ -7,7 +7,7 @@
 	br = branch
 	ci = commit
 	st = status
-    cim = 'commit --amend'
+    cim = commit --amend
 [help]
 	autocorrect = 1
 [core]
