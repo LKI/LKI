@@ -1,0 +1,3 @@
+[submodule "Unix/dotvim"]
+	path = Unix/dotvim
+	url = https://github.com/LKI/dotvim.git

@@ -14,7 +14,9 @@ fi
 # Directory Color
 
 # Alias 
-alias la='ls -al --color'
+alias ls='ls --color'
+alias ll='ls -l --color'
+alias la='ls -a --color'
 alias vi='vim'
 alias ..='cd ..'
 
