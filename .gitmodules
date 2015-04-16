@@ -1,3 +1,6 @@
 [submodule "Unix/dotvim"]
 	path = Unix/dotvim
 	url = https://github.com/LKI/dotvim.git
+[submodule "Unix/prelude"]
+	path = Unix/prelude
+	url = https://github.com/bbatsov/prelude.git
