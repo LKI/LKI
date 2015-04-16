@@ -1,9 +1,9 @@
-[submodule "Unix/dotvim"]
-	path = Unix/dotvim
+[submodule "unix/dotvim"]
+	path = unix/dotvim
 	url = https://github.com/LKI/dotvim.git
-[submodule "Unix/prelude"]
-	path = Unix/prelude
+[submodule "unix/prelude"]
+	path = unix/prelude
 	url = https://github.com/bbatsov/prelude.git
-[submodule "Unix/bash-git-prompt"]
-	path = Unix/bash-git-prompt
+[submodule "unix/bash-git-prompt"]
+	path = unix/bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt.git

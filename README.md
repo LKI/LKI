@@ -1,9 +1,18 @@
 Introduction
 ============
 
-* Author: Lirian Su (l@cloudisdream.com)
+This is some general environment settings of Lirian
 
-Description
+Installation
 ===========
 
-* This is some general settings of Lirian
+* Unix
+```sh
+    git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
+    cd ~/.myconf | sh setup.sh
+```
+
+Others
+======
+
+Author: Lirian Su (l@cloudisdream.com)
