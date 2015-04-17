@@ -6,7 +6,7 @@ if [ -e ~/.bashrc ]
 then
     mv ~/.bashrc ~/.bashrc.bak
 fi
-ln -s .bashrc ~/.bashrc
+cp .bashrc ~/.bashrc
 
 # Install dotvim
 ln -s dotvim/vimrc ~/.vimrc
