@@ -6,6 +6,7 @@
 	co = checkout
 	br = branch
 	ci = commit
+    dl = diff HEAD^
 	st = status
     cim = commit --amend
 [help]
