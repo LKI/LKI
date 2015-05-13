@@ -1,7 +1,9 @@
 #!/bin/sh
 
+pwd=`pwd`
+
 # Install bash-git-prompt
-ln -s bash-git-prompt ~/.bash-git-prompt
+ln -s $pwd/bash-git-prompt ~/.bash-git-prompt
 if [ -e ~/.bashrc ]
 then
     mv ~/.bashrc ~/.bashrc.bak
@@ -9,7 +11,8 @@ fi
 cp .bashrc ~/.bashrc
 
 # Install dotvim
-ln -s dotvim/vimrc ~/.vimrc
+ln -s $pwd/dotvim/vimrc ~/.vimrc
+ln -s $pwd/dotvim ~/.vim
 
 # Install prelude
-ln -s prelude ~/.emacs.d
+ln -s $pwd/prelude ~/.emacs.d

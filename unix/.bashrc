@@ -13,12 +13,15 @@ fi
 
 # Directory Color
 
-# Alias 
+# Alias
 alias ls='ls --color'
 alias ll='ls -l --color'
 alias la='ls -a --color'
 alias vi='vim'
 alias ..='cd ..'
+
+# Env settings
+export PATH=$PATH:.:~/bin
 
 # gitprompt configuration
 # Set config variables first
