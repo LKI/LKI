@@ -1,0 +1,5 @@
+language:
+    bash
+
+script:
+    sh unix/setup.sh
