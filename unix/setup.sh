@@ -14,5 +14,5 @@ cp .bashrc ~/.bashrc
 ln -s $pwd/dotvim/vimrc ~/.vimrc
 ln -s $pwd/dotvim ~/.vim
 
-# Install prelude
-ln -s $pwd/prelude ~/.emacs.d
+# Install .emacs.d
+ln -s $pwd/emacs.d ~/.emacs.d
