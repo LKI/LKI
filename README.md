@@ -11,7 +11,7 @@ Installation
 * Unix
 ```sh
     git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
-    cd ~/.myconf | sh setup.sh
+    cd ~/.myconf | sh unix/setup.sh
 ```
 
 Others

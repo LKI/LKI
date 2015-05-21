@@ -1,5 +1,8 @@
 language:
     bash
 
+install:
+    git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
+
 script:
-    sh unix/setup.sh
+    sh ~/.myconf/unix/setup.sh
