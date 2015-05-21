@@ -6,3 +6,6 @@ install:
 
 script:
     sh ~/.myconf/unix/setup.sh
+
+notifications:
+    email: false
