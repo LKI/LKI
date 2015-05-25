@@ -19,6 +19,7 @@ alias ll='ls -l --color'
 alias la='ls -a --color'
 alias vi='vim'
 alias ..='cd ..'
+alias please='sudo'
 
 # Env settings
 export PATH=$PATH:.:~/bin
