@@ -4,7 +4,7 @@
     cim = commit --amend
     co = checkout
     dl = diff HEAD^
-    logg = git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    logg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     loggo = log --graph --decorate --oneline --abbrev-commit --all
     st = status -sb
 [core]
