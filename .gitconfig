@@ -4,8 +4,10 @@
     cim = commit --amend
     co = checkout
     dl = diff HEAD^
-    logg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    loggo = log --graph --decorate --oneline --abbrev-commit --all
+    dfl = diff --name-status
+    logo = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    logg = log --graph --decorate --oneline --abbrev-commit --all
+    pf = push -f
     st = status -sb
 [core]
 	editor = vim

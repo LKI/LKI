@@ -20,6 +20,7 @@ alias la='ls -a --color'
 alias vi='vim'
 alias ..='cd ..'
 alias please='sudo'
+alias ta='tmux attach'
 
 # Env settings
 export PATH=$PATH:.:~/bin
