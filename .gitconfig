@@ -5,6 +5,7 @@
     co = checkout
     dl = diff HEAD^
     dfl = diff --name-status
+    dfs = diff --staged
     logo = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     logg = log --graph --decorate --oneline --abbrev-commit --all
     pf = push -f
@@ -18,4 +19,4 @@
 [push]
 	default = simple
 [credential]
-	helper = store
+	helper = cache --timeout 36000
