@@ -17,4 +17,4 @@ Installation
 Others
 ======
 
-Author: Lirian Su (l@cloudisdream.com)
+Author: Lirian Su (liriansu@gmail.com)
