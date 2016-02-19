@@ -43,7 +43,7 @@ if [ -e ~/.tmux.conf ]
 then
     echo ".tmux.conf exist."
 else
-    ln -s $DIR/tmux.conf ~/.tmux.conf
+    ln -s $DIR/.tmux.conf ~/.tmux.conf
 fi
 
 echo "Setup success."
