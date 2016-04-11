@@ -36,7 +36,6 @@ ln -s $DIR/emacs.d ~/.emacs.d
 
 # Install .gitconfig
 cp $DIR/../.gitconfig ~/.gitconfig
-cp $DIR/../.git-credentials ~/.git-credentials
 
 # Install .tmux.conf
 if [ -e ~/.tmux.conf ]
