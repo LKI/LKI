@@ -1,24 +1,24 @@
 [alias]
-  br = branch
-  ci = commit
-  cim = commit --amend
-  co = checkout
-  dfl = diff --name-status
-  dfs = diff --staged
-  dl = diff HEAD^
-  last = log -1 HEAD
-  logg = log --graph --decorate --oneline --abbrev-commit --all
-  logo = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  mgf = merge --ff-only
-  pf = push -f
-  st = status
+    br = branch
+    ci = commit
+    cim = commit --amend
+    co = checkout
+    dfl = diff --name-status
+    dfs = diff --staged
+    dl = diff HEAD^
+    last = log -1 HEAD
+    logg = log --graph --decorate --oneline --abbrev-commit --all
+    logo = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    mgf = merge --ff-only
+    pf = push -f
+    st = status
 [core]
-	editor = vim
+    editor = vim
 [color]
-	ui = true
+    ui = true
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [push]
-	default = simple
+    default = simple
 [credential]
-	helper = cache --timeout 36000
+    helper = cache --timeout 36000
