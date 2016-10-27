@@ -22,6 +22,9 @@ alias ..='cd ..'
 alias please='sudo'
 alias ta='tmux attach'
 
+# Enable vi-like editing
+set -o vi
+
 # Env settings
 export PATH=$PATH:.:~/bin
 
