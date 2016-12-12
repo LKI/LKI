@@ -1,9 +1,6 @@
 [submodule "unix/dotvim"]
     path = unix/dotvim
     url = https://github.com/LKI/dotvim.git
-[submodule "unix/bash-git-prompt"]
-    path = unix/bash-git-prompt
-    url = https://github.com/magicmonty/bash-git-prompt.git
 [submodule "unix/emacs.d"]
     path = unix/emacs.d
     url = https://github.com/LKI/emacs.d.git

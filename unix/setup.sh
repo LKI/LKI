@@ -2,14 +2,6 @@
 
 DIR=$( cd "$( dirname "$0" )" && pwd )
 
-# Install bash-git-prompt
-if [ -e ~/.bash-git-prompt ]
-then
-    echo ".bash-git-prompt exist."
-else
-    ln -s $DIR/bash-git-prompt ~/.bash-git-prompt
-fi
-
 # Install bashrc
 if [ -e ~/.bashrc ]
 then
