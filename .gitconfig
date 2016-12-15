@@ -7,12 +7,13 @@
     dfs = diff --staged
     dl = diff HEAD^
     last = log -1 HEAD
-    logg = log --graph --decorate --oneline --abbrev-commit --all
+    logg = log --graph --decorate --oneline --abbrev-commit --all --no-merges
     logo = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     logs = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     mgf = merge --ff-only
     pf = push -f
     rp = remote prune
+    rh = reset --hard
     st = status
 [core]
     editor = vim
