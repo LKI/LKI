@@ -13,12 +13,13 @@
     logs = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     mgf = merge --ff-only
     pf = push -f
+    puo = push -u origin
     rh = reset --hard
     rp = remote prune
     st = status
 [core]
     editor = vim
-	pager = less -F -X
+    pager = less -F -X
 [color]
     ui = true
 [merge]
@@ -27,3 +28,6 @@
     default = simple
 [credential]
     helper = cache --timeout 36000
+[user]
+    name = Lirian Su
+    email = liriansu@gmail.com
