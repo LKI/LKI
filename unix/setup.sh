@@ -11,13 +11,8 @@ fi
 cp $DIR/.bashrc ~/.bashrc
 
 # Install dotvim
-if [ -e ~/.vimrc ]
-then
-    echo ".vimrc exists."
-else
-    ln -s $DIR/dotvim/vimrc ~/.vimrc
-    ln -s $DIR/dotvim ~/.vim
-fi
+ln -sf $DIR/dotvim/vimrc ~/.vimrc
+ln -sf $DIR/dotvim ~/.vim
 
 # Install .emacs.d
 if [ -e ~/.emacs.d ]
@@ -27,14 +22,9 @@ fi
 ln -s $DIR/emacs.d ~/.emacs.d
 
 # Install .gitconfig
-cp $DIR/../.gitconfig ~/.gitconfig
+ln -sf $DIR/../.gitconfig ~/.gitconfig
 
 # Install .tmux.conf
-if [ -e ~/.tmux.conf ]
-then
-    echo ".tmux.conf exist."
-else
-    ln -s $DIR/.tmux.conf ~/.tmux.conf
-fi
+ln -sf $DIR/.tmux.conf ~/.tmux.conf
 
 echo "Setup success."
