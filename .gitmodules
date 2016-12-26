@@ -1,6 +1,3 @@
-[submodule "unix/dotvim"]
-    path = unix/dotvim
-    url = https://github.com/LKI/dotvim.git
 [submodule "unix/emacs.d"]
     path = unix/emacs.d
     url = https://github.com/LKI/emacs.d.git
