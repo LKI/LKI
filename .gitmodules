@@ -1,3 +1,0 @@
-[submodule "unix/emacs.d"]
-    path = unix/emacs.d
-    url = https://github.com/LKI/emacs.d.git
