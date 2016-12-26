@@ -8,10 +8,9 @@ This is some general environment settings of Lirian
 Installation
 ===========
 
-* Unix
+* \*nix
 ```sh
-    git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
-    cd ~/.myconf && sh unix/setup.sh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/LKI/myconf/master/setup.sh)"
 ```
 
 Others
