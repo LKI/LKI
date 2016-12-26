@@ -26,7 +26,7 @@ ZSH_THEME="agnoster"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -83,6 +83,8 @@ gpip() {
 }
 export PIP_REQUIRE_VIRTUALENV=true
 export PATH=${PATH}:/Users/liriansu/zaihui/phabricator/arcanist/bin/
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -103,4 +105,6 @@ alias ta='tmux attach'
 alias ygg="cd ~/zaihui/server; source env/bin/activate"
 alias sb="source env/bin/activate"
 alias pt="cd ~/zaihui/server && flake8 ygg && cd ygg && python manage.py test"
-
+alias pm="python manage.py"
+alias it="git"
+alias ado="arc diff origin/dev"
