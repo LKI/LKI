@@ -4,6 +4,7 @@
     cia = commit --all
     cim = commit --amend
     co = checkout
+    d = diff
     dfl = diff --name-status
     dfs = diff --staged
     dl = diff HEAD^
