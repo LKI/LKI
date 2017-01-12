@@ -1,6 +1,7 @@
 [alias]
     br = branch
     ci = commit
+    squash = rebase HEAD~2 -i
     cia = commit --all
     cim = commit --amend
     co = checkout

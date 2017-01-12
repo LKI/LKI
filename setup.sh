@@ -22,10 +22,9 @@ ln -sf $DIR/dotvim ~/.vim
 # bak .emacs.d
 # ln -s $DIR/emacs.d ~/.emacs.d
 
-# Install .gitconfig
+# Install configs
 ln -sf $DIR/.gitconfig ~/.gitconfig
-
-# Install .tmux.conf
 ln -sf $DIR/.tmux.conf ~/.tmux.conf
+ln -sf $DIR/.zshrc ~/.zshrc
 
 echo "Setup success."

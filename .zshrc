@@ -82,9 +82,10 @@ gpip() {
   PIP_REQUIRE_VIRTUALENV= "" pip "$@"
 }
 export PIP_REQUIRE_VIRTUALENV=true
-export PATH=${PATH}:/Users/liriansu/zaihui/phabricator/arcanist/bin/
+export PATH=${PATH}:~/.myconf/scripts:/Users/liriansu/zaihui/phabricator/arcanist/bin/
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -108,3 +109,4 @@ alias pt="cd ~/zaihui/server && flake8 ygg && cd ygg && python manage.py test"
 alias pm="python manage.py"
 alias it="git"
 alias ado="arc diff origin/dev"
+alias ad1="arc diff HEAD~1"
