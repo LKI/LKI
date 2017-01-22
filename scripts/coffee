@@ -1,5 +1,19 @@
 #!/bin/sh
 set -e
+
 BR=`git rev-parse --abbrev-ref HEAD`
 echo "merging branch <${BR}> to <dev>"
-git fetch && git rebase origin/dev && cd ~/zaihui/server && flake8 ygg && cd ygg && python manage.py test && git co dev && git mgf ${BR} && git push && git co - && git br -D dev
+
+git fetch
+git rebase origin/dev
+
+cd ~/zaihui/server
+flake8 ygg
+cd ygg
+python manage.py test
+
+git co dev
+git mgf ${BR}
+git push
+git co -
+git br -D dev
