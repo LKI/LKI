@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
 DIR="~/.myconf"
@@ -6,10 +7,10 @@ DIR="~/.myconf"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 function bak {
-    if [ -e $1 ]
-    then
-        mv $1 $1.bak
-    fi
+  if [ -e $1 ]
+  then
+    mv $1 $1.bak
+  fi
 }
 
 # Install dotvim
