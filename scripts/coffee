@@ -1,4 +1,6 @@
 #!/bin/sh
+# take a coffee, and merge current branch into dev
+
 set -e
 
 BR=`git rev-parse --abbrev-ref HEAD`

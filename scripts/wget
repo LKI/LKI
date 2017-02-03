@@ -1,4 +1,6 @@
 #!/bin/sh
+# a simple wget replacement for MAC OS
+
 set -e
 
 if [ $# -lt 1 ]; then

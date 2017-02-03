@@ -1,0 +1,12 @@
+#!/bin/sh
+# git diff one commit
+
+set -e
+
+if [ ! $# -eq 1 ]; then
+    echo "usage: showdiff <sha-code>"
+    exit 1
+fi
+
+git diff $1^..$1
+
