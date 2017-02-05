@@ -51,7 +51,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx)
+plugins=(git osx vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,3 +110,4 @@ alias pm="python manage.py"
 alias it="git"
 alias ado="arc diff origin/dev"
 alias ad1="arc diff HEAD~1"
+alias ymym="git dfl CURRENT_PROD | grep migra"
