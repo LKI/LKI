@@ -27,7 +27,7 @@
     rp = remote prune
     save = stash
     st = status
-    yes = log --oneline --since yesterday --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    yes = log --oneline --since yesterday --pretty=format:'%Cred%h%Creset - %s' --abbrev-commit --date=relative
 [core]
     editor = vim
     pager = less -F -X
