@@ -113,4 +113,4 @@ alias ta='tmux attach'
 alias vi='vim'
 alias ygg="cd ~/zaihui/server && source env/bin/activate && cd ygg"
 alias ymym="git dfl CURRENT_PROD | grep migra"
-alias wtc='git add . && git ci -m '$(curl -s whatthecommit.com/index.txt)""
+alias wtc="git add . && git ci -m '$(curl -s whatthecommit.com/index.txt)'"
