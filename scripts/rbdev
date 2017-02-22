@@ -1,0 +1,11 @@
+#!/bin/sh
+# rebase all to dev
+
+set -e
+
+git f
+for BR in "$@"
+do
+  git checkout ${BR} && git rd && git p -f
+done
+
