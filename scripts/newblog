@@ -1,0 +1,27 @@
+#!/bin/sh
+# make a new jekyll blog
+
+set -e
+
+if [ $# -lt 1 ]; then
+    echo "usage: newblog <some blog name>"
+    exit 1
+fi
+
+NAME=$1
+FILENAME="`date '+%Y-%m-%d'`-$1.md"
+
+cat > ${FILENAME} <<EOF
+---
+layout:    post
+title:     "${NAME}"
+date:      "`date '+%Y-%m-%d %H:%M:%S'`"
+permalink: /${NAME}
+---
+
+${NAME}
+
+<!--MORE-->
+
+EOF
+
