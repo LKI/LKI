@@ -6,6 +6,6 @@ set -e
 git f
 for BR in "$@"
 do
-  git checkout ${BR} && git rd && git p -f
+  git co ${BR} && git rd && git puo ${BR} -f
 done
 
