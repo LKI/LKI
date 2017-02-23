@@ -4,7 +4,8 @@
 set -e
 
 git f
-for BR in "$@"
+
+for BR in `git br | cut -c 3-`
 do
   git co ${BR} && git rd && git puo ${BR} -f
 done
