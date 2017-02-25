@@ -16,16 +16,18 @@ function bak {
 # Install dotvim
 bak .vimrc
 bak .vim
-ln -sf $DIR/dotvim/vimrc ~/.vimrc
-ln -sf $DIR/dotvim ~/.vim
+bak .ideavimrc
+ln -sf ${DIR}/dotvim/vimrc ~/.vimrc
+ln -sf ${DIR}/dotvim ~/.vim
+ln -sf ${DIR}/.ideavimrc ~/.ideavimrc
 
 # Install .emacs.d
 # bak .emacs.d
-# ln -s $DIR/emacs.d ~/.emacs.d
+# ln -s ${DIR}/emacs.d ~/.emacs.d
 
 # Install configs
-ln -sf $DIR/.gitconfig ~/.gitconfig
-ln -sf $DIR/.tmux.conf ~/.tmux.conf
-ln -sf $DIR/.zshrc ~/.zshrc
+ln -sf ${DIR}/.gitconfig ~/.gitconfig
+ln -sf ${DIR}/.tmux.conf ~/.tmux.conf
+ln -sf ${DIR}/.zshrc ~/.zshrc
 
 echo "Setup success."
