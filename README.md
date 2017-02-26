@@ -3,7 +3,7 @@
 Introduction
 ============
 
-This is some general environment settings of Lirian
+This is some general environment settings of Lirian.
 
 Installation
 ===========
@@ -12,8 +12,3 @@ Installation
 ```sh
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/LKI/myconf/master/setup.sh)"
 ```
-
-Others
-======
-
-Author: Lirian Su (liriansu@gmail.com)
