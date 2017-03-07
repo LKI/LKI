@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/liriansu/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -57,6 +57,7 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey -v
 bindkey '' history-incremental-search-backward
+bindkey '.' insert-last-word
 
 # User configuration
 
@@ -82,10 +83,11 @@ gpip() {
   PIP_REQUIRE_VIRTUALENV= "" pip "$@"
 }
 export PIP_REQUIRE_VIRTUALENV=true
-export PATH=${PATH}:~/.myconf/scripts:/Users/liriansu/zaihui/phabricator/arcanist/bin/
+export PATH=${PATH}:~/.myconf/scripts:~/zaihui/phabricator/arcanist/bin/
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export REPO=/server
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -101,15 +103,16 @@ alias ad1="arc diff HEAD~1"
 alias ado="arc diff origin/dev"
 alias g='git'
 alias it="git"
-alias la='/bin/ls -ah -G'
-alias ll='/bin/ls -lh -G'
-alias ls='/bin/ls -G'
+alias la='/bin/ls -ah --color'
+alias ll='/bin/ls -lh --color'
+alias ls='/bin/ls --color'
 alias please='sudo'
 alias pm="python manage.py"
-alias pt="cd ~/zaihui/server && flake8 ygg && cd ygg && python manage.py test"
+alias pt="cd ${REPO} && flake8 ygg && cd ygg && python manage.py test"
 alias qgit='git'
 alias sb="source env/bin/activate"
 alias ta='tmux attach'
 alias vi='vim'
-alias ygg="cd ~/zaihui/server && source env/bin/activate && cd ygg"
+alias vsb="source ~/.virtualenvs/server/bin/activate"
+alias ygg="cd ${REPO}/ygg"
 alias ymym="git dfl CURRENT_PROD | grep '^A.*migra.*'"
