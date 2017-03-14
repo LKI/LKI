@@ -9,7 +9,7 @@ echo "merging branch <${BR}> to <dev>"
 git fetch
 git rebase origin/dev
 
-cd ~/zaihui/server
+cd ${REPO}
 flake8 ygg
 cd ygg
 python manage.py test
