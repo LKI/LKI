@@ -28,6 +28,7 @@
     rh = reset --hard
     rp = remote prune
     save = stash
+    slog = log --graph --decorate --oneline --all --simplify-by-decoration
     squash = rebase HEAD~2 -i
     st = status
     yes = log --oneline --since yesterday --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
