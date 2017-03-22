@@ -14,8 +14,7 @@
     g = grep -in
     last = log -1 HEAD
     load = stash pop
-    loga = log --graph --decorate --oneline --abbrev-commit --all
-    logg = log --graph --decorate --oneline --abbrev-commit
+    logg = log --graph --decorate --oneline --abbrev-commit --all
     logo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     logs = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     mgf = merge --ff-only
