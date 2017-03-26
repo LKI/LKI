@@ -3,7 +3,7 @@ set -o vi
 alias ..='cd ..'
 alias ad1="arc diff HEAD~1"
 alias ado="arc diff origin/dev"
-alias bridgit="node '/c/Program Files/nodejs/node_modules/bridgit/index.js'"
+alias bridgit="node '/c/zaihui/files/bridgit/index.js'"
 alias g='git'
 alias it="git"
 alias la='/bin/ls -ah --color'
