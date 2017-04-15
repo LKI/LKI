@@ -4,6 +4,7 @@
     ci = commit
     cia = commit --all
     cim = commit --amend
+    cima = commit --amend --all
     co = checkout
     crp = cherry-pick
     d = diff
@@ -20,7 +21,7 @@
     mgf = merge --ff-only
     p = push
     pf = push -f
-    puo = push -u origin
+    puo = push -u o
     rb = rebase
     rbc = rebase --continue
     regret = reset HEAD^
