@@ -51,7 +51,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx vagrant)
+plugins=(git osx vagrant zsh-wakatime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,11 +79,15 @@ bindkey '.' insert-last-word
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+function git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+}
 gpip() {
   PIP_REQUIRE_VIRTUALENV= "" pip "$@"
 }
 export PIP_REQUIRE_VIRTUALENV=true
-export PATH=${PATH}:~/.myconf/scripts:~/zaihui/phabricator/arcanist/bin/:/home/lirian/phabricator/arcanist/bin/
+export PATH=~/.myconf/scripts:${PATH}
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
