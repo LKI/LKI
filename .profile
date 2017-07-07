@@ -25,7 +25,6 @@ alias svu="cd /c/zaihui/ubuntu"
 alias ta='tmux attach'
 alias vgst="vagrant global-status"
 alias vi='vim'
-alias vim="gvim"
 alias vr="vagrant"
 alias vsb="source ~/.virtualenvs/server/bin/activate"
 alias vst="vagrant status"
