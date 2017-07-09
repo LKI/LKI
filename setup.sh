@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
