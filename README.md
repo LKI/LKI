@@ -1,14 +1,12 @@
 [![Build Status](https://travis-ci.org/LKI/myconf.svg?branch=master)](https://travis-ci.org/LKI/myconf)
 
-Introduction
-============
+# 安装
 
-This is some general environment settings of Lirian.
+* Unix 系统可以用 curl 命令一键安装：
 
-Installation
-===========
-
-* \*nix
 ```sh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/LKI/myconf/master/setup.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/LKI/myconf/master/setup.sh)"
 ```
+
+* Windows 系统 TODO 中
+
