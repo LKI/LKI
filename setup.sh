@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 
-git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
-DIR="~/.myconf"
+test -d ~/.myconf || git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
+
+DIR="`echo ~`/.myconf"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
