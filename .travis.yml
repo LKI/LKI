@@ -1,11 +1,8 @@
 language:
     bash
 
-install:
-    git clone --recurse-submodules https://github.com/LKI/myconf.git ~/.myconf
-
 script:
-    sh ~/.myconf/unix/setup.sh
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/LKI/myconf/master/setup.sh)"
 
 notifications:
     email: false
