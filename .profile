@@ -1,8 +1,6 @@
 set -o vi
 
 alias ..='cd ..'
-alias ad1="arc diff HEAD~1"
-alias ado="arc diff origin/dev"
 alias bridgit="node '/c/zaihui/files/bridgit/index.js'"
 alias g='git'
 alias gc='git remote show | xargs -I{} git remote prune {} && git gc'
@@ -15,13 +13,20 @@ alias ls='/bin/ls --color'
 alias please='sudo'
 alias pm="python manage.py"
 alias pt="cd ${REPO} && flake8 ygg && cd ygg && python manage.py test"
+alias py="winpty python"
 alias qgit='git'
 alias reload="source ~/.profile"
 alias sb="source env/bin/activate"
+alias svb="cd /c/zaihui/beloved"
+alias svc="cd /c/zaihui/compose"
+alias svd="cd /c/zaihui/dudu"
+alias svh="cd /c/zaihui/holygrail"
 alias svk="cd /c/zaihui/kevin"
+alias svl="cd /c/zaihui/self/lki.github.io"
 alias svr="cd /c/zaihui/server"
 alias svt="cd /c/zaihui/servant"
 alias svu="cd /c/zaihui/ubuntu"
+alias svw="cd /c/zaihui/wechatpy"
 alias ta='tmux attach'
 alias vgst="vagrant global-status"
 alias vi='vim'

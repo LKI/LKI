@@ -26,6 +26,7 @@
     rbc = rebase --continue
     regret = reset HEAD^
     rh = reset --hard
+    rhd = reset --hard z/dev
     rp = remote prune
     save = stash
     slog = log --graph --decorate --oneline --all --simplify-by-decoration
