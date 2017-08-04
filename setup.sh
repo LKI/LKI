@@ -4,10 +4,7 @@
 set -e
 
 usage () {
-    echo "usage: ${0} <command>"
-    echo "command:"
-    echo "         install:   install the configuration"
-    echo "         uninstall: uninstall the configuration"
+    echo "usage: ${0} [uninstall]"
     exit 1
 }
 
@@ -54,19 +51,6 @@ uninstall () {
     rm -rf ${confDir}
 }
 
-if [[ ${#} -lt 1 ]];
-then
-    usage
-fi
-
-if [[ "${1}" == "install" ]];
-then
-    echo "installing"
-    install
-    echo "done"
-    exit 0
-fi
-
 if [[ "${1}" == "uninstall" ]];
 then
     echo "uninstalling"
@@ -75,4 +59,6 @@ then
     exit 0
 fi
 
-usage
+echo "installing"
+install
+echo "done"
