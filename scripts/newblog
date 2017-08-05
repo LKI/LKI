@@ -1,15 +1,19 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # make a new jekyll blog
 
 set -e
 
-if [ $# -lt 1 ]; then
-    echo "usage: newblog <some blog name>"
-    exit 1
+if [[ $# -lt 1 ]]; then
+  echo "usage: newblog <some blog name>"
+  exit 1
 fi
 
 NAME=$1
 FILENAME="`date '+%Y-%m-%d'`-$1.md"
+
+if [[ -d "_posts" ]]; then
+  FILENAME="_posts/${FILENAME}"
+fi
 
 cat > ${FILENAME} <<EOF
 ---
@@ -24,4 +28,6 @@ ${NAME}
 <!--MORE-->
 
 EOF
+
+echo ${FILENAME}
 
