@@ -2,6 +2,7 @@ set -o vi
 
 alias ..='cd ..'
 alias bridgit="node '/c/zaihui/files/bridgit/index.js'"
+alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=${HOME}/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=${HOME}/.cnpmrc"
 alias g='git'
 alias gc='git remote show | xargs -I{} git remote prune {} && git gc'
 alias it="git"
@@ -25,7 +26,9 @@ alias svd="cd /c/zaihui/dudu"
 alias svh="cd /c/zaihui/holygrail"
 alias svk="cd /c/zaihui/kevin"
 alias svl="cd /c/Code/lki.github.io"
+alias svm="cd /c/Code/meican"
 alias svr="cd /c/zaihui/server"
+alias svs="cd /c/Code/scripts"
 alias svt="cd /c/zaihui/servant"
 alias svu="cd /c/zaihui/ubuntu"
 alias svw="cd /c/zaihui/wechatpy"
