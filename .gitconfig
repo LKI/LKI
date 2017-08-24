@@ -1,6 +1,7 @@
 [alias]
     b = branch
     br = branch
+    changed = update-index --no-assume-unchanged
     ci = commit
     cia = commit --all
     cim = commit --amend
@@ -32,6 +33,7 @@
     slog = log --graph --decorate --oneline --all --simplify-by-decoration
     squash = rebase HEAD~2 -i
     st = status
+    unchanged = update-index --assume-unchanged
     yes = log --oneline --since yesterday --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [core]
     editor = vim
