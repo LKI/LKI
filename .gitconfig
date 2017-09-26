@@ -23,6 +23,7 @@
     p = push
     pf = push -f
     puo = push -u o
+    puz = push -u z
     rb = rebase
     rbc = rebase --continue
     regret = reset HEAD^
