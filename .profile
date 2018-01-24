@@ -44,6 +44,6 @@ alias vsb="source ~/.virtualenvs/server/bin/activate"
 alias vst="vagrant status"
 alias vu="vagrant up"
 alias ygg="cd ${REPO}/ygg"
-alias ymym="git dfl CURRENT_PROD | grep '^A.*migra.*'"
+alias ymym="git dfl z/master | grep '^A.*migra.*'"
 
-export PATH=~/.myconf/scripts:${PATH}
+export PATH=~/.virtualenvs/py35/Scripts:~/.myconf/scripts:${PATH}
