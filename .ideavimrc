@@ -5,4 +5,4 @@ nmap gl :action VimMotionNextTab<CR>
 nmap gh :action VimMotionPreviousTab<CR>
 nmap gb :action Back<CR>
 nmap gr :action MoveTabRight<CR>
-nmap gt /^class.*APITestCase<CR>W:action CopyReference<CR>
+nmap gt /^class.*TestCase<CR>W:action CopyReference<CR>

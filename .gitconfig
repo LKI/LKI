@@ -26,6 +26,7 @@
     puz = push -u z
     rb = rebase
     rbc = rebase --continue
+    rbi = rebase -i
     regret = reset HEAD^
     rh = reset --hard
     rhd = reset --hard z/dev
