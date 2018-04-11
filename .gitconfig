@@ -32,6 +32,7 @@
     rh = reset --hard
     rhd = reset --hard z/dev
     rp = remote prune
+    rroo = remote rename origin o
     save = stash
     slog = log --graph --decorate --oneline --all --simplify-by-decoration
     squash = rebase HEAD~2 -i
