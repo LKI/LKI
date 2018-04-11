@@ -14,6 +14,7 @@
     dl = diff HEAD^
     f = fetch --tags
     g = grep -in
+    hide = update-index --assume-unchanged
     last = log -1 HEAD
     load = stash pop
     logg = log --graph --decorate --oneline --abbrev-commit --all
@@ -34,6 +35,7 @@
     save = stash
     slog = log --graph --decorate --oneline --all --simplify-by-decoration
     squash = rebase HEAD~2 -i
+    unhide = update-index --no-assume-unchanged
     st = status
     unchanged = update-index --assume-unchanged
     yes = log --oneline --since yesterday --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
