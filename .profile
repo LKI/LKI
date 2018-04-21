@@ -1,7 +1,6 @@
 set -o vi
 
 alias ..='cd ..'
-alias bridgit="node '/c/zaihui/files/bridgit/index.js'"
 alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=${HOME}/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=${HOME}/.cnpmrc"
 alias g='git'
 alias gash='ssh -tt igate ssh -tt'
@@ -14,7 +13,6 @@ alias ll='/bin/ls -lh --color'
 alias ls='/bin/ls --color'
 alias please='sudo'
 alias pm="python manage.py"
-alias pt="cd ${REPO} && flake8 ygg && cd ygg && python manage.py test"
 alias py="winpty python"
 alias qgit='git'
 alias reload="source ~/.profile"
@@ -44,7 +42,6 @@ alias vr="vagrant"
 alias vsb="source ~/.virtualenvs/server/bin/activate"
 alias vst="vagrant status"
 alias vu="vagrant up"
-alias ygg="cd ${REPO}/ygg"
-alias ymym="git dfl z/master | grep '^A.*migra.*'"
 
 export PATH=~/.virtualenvs/py35/Scripts:~/.myconf/scripts:${PATH}
+
