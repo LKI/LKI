@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # git diff one commit
 
 set -e
 
 if [ ! $# -eq 1 ]; then
-    echo "usage: showdiff <sha-code>"
+    echo "usage: gdiff <sha-code>"
     exit 1
 fi
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 # a simple wget replacement for MAC OS
 
 set -e
