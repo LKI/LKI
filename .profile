@@ -4,7 +4,7 @@ alias ..='cd ..'
 alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=${HOME}/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=${HOME}/.cnpmrc"
 alias g='git'
 alias gc='git remote show | xargs -I{} git remote prune {} && git gc'
-alias gsh='ssh -tt gate ssh -tt'
+alias gsh='ssh -tt gate ssh -l zaihui -tt'
 alias ish='ssh -tt igate ssh -tt'
 alias it="git"
 alias kt="env/Scripts/python -m unittest"
