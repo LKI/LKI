@@ -3,8 +3,9 @@ set -o vi
 alias ..='cd ..'
 alias cnpm="npm --registry=https://registry.npm.taobao.org --cache=${HOME}/.npm/.cache/cnpm --disturl=https://npm.taobao.org/dist --userconfig=${HOME}/.cnpmrc"
 alias g='git'
-alias gash='ssh -tt igate ssh -tt'
 alias gc='git remote show | xargs -I{} git remote prune {} && git gc'
+alias gsh='ssh -tt gate ssh -tt'
+alias ish='ssh -tt igate ssh -tt'
 alias it="git"
 alias kt="env/Scripts/python -m unittest"
 alias la='/bin/ls -ah --color'
@@ -24,6 +25,7 @@ alias svb="cd /c/zaihui/beloved"
 alias svc="cd /c/zaihui/compose"
 alias svd="cd /c/zaihui/dudu"
 alias sve="cd /c/Code/Twenty-four"
+alias svf="cd /c/zaihui/faker"
 alias svh="cd /c/zaihui/holygrail"
 alias svk="cd /c/zaihui/kevin"
 alias svl="cd /c/Code/lki.github.io"
