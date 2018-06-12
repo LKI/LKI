@@ -58,7 +58,8 @@ export PATH=~/.virtualenvs/py35/Scripts:~/.myconf/scripts:${PATH}
 
 # my aliases
 alias gsh='ssh -tt gate ssh -l zaihui -tt'
-alias ush='ssh -tt gate ssh -l ubuntu -tt'
+alias gush='ssh -tt gate ssh -l ubuntu -tt'
+alias ush='ssh -tt ga ssh -l ubuntu -tt'
 alias ish='ssh -tt igate ssh -tt'
 alias pt="cd ${REPO} && flake8 ygg && cd ygg && python manage.py test"
 alias ygg="cd ${REPO}/ygg"
