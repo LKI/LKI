@@ -268,11 +268,17 @@ gsh () {
   HOSTLINE=$(gcloud ${FLAGS} compute instances list --filter="name:${KEYWORD}" | grep RUNNING | fzf -1 -0)
   if [[ -n "${HOSTLINE}" ]]; then
     read -r NAME ZONE NOTHING <<< "${HOSTLINE}"
-    gcloud ${FLAGS} compute ssh ${NAME} --zone=${ZONE} --tunnel-through-iap -- -t sudo -i;
+    gcloud ${FLAGS} compute ssh ${NAME} --zone=${ZONE} -- -t sudo -i;
   fi
 }
+gshp () {
+  gsh "${1}" --project=opuspro --tunnel-through-iap
+}
 gshm () {
-  gsh "${1}" --project=immersive-362502
+  gsh "${1}" --project=immersive-362502 --tunnel-through-iap
+}
+gsha () {
+  gsh "${1}" --project=opusair
 }
 csh () {
   KEYWORD=${1}
