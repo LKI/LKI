@@ -18,6 +18,13 @@
     "paneFlash": true,
     "dockBadge": true,
     "showInMenuBar": true
+  },
+
+  // Sidebar: collapse the working-directory path to just the last folder name
+  // (e.g. "agentic-finecut" instead of "code/src/github.com/opus-pro/...") —
+  // the sidebar is narrow.
+  "sidebar": {
+    "pathLastSegmentOnly": true
   }
 
   /* Recommended for a parallel-agent workflow — merge these keys into the
